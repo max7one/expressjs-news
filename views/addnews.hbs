@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=320.1,minimum-scale=1.0,maximum-scale=1.0">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <title>添加新闻</title>
+  <link rel="stylesheet" type="text/css" href="/css/addnews.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <form method="post" enctype="multipart/form-data" id='userform' action="/system/addnews/content">
+      <table>
+        <tr>
+          <td id="title">新闻标题</td>
+          <td id="content">
+            <input type="text" name="newstitle">
+          </td>
+        </tr>
+        <tr>
+          <td id="title">新闻图片</td>
+          <td id="content">
+            <input type="file" name="file">
+          </td>
+        </tr>
+        <tr>
+          <td id="title">新闻内容</td>
+          <td id="content">
+            <textarea class="col-sm-12" name="newscontent" id="" form="userform" rows="6"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td id="title">添加时间</td>
+          <td id="content">
+            <input type="date" name="addtime">
+          </td>
+        </tr>
+        <tr>
+          <td id="title">来源</td>
+          <td id="content">
+            <input type="text" name="source">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td id="content">
+            <input type="submit" class="btn" value="提交">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+
+</html>

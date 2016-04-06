@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=320.1,minimum-scale=1.0,maximum-scale=1.0">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <title>百度新闻</title>
+  <link rel="stylesheet" type="text/css" href="{{static './css/login.css'}}">
+</head>
+
+<body>
+  <header class="pass-header">
+    <a href="/" class="pass-back">返回主页</a>
+  </header>
+  <div class="pass-content">
+    <form class="form-wrapper">
+      <p class="err">{{errmsg}}</p>
+      <p class="form-input-wrapper">
+        <label for="username">用户名</label>
+        <input type="text" name="username" id="username" placeholder="admin">
+      </p>
+      <p class="form-input-wrapper">
+        <label for="password">密码</label>
+        <input type="text" name="password" id="password" placeholder="admin">
+      </p>
+      <p class="form-input-wrapper">
+        <input type="button" value="登录" class="pass-btn">
+      </p>
+    </form>
+  </div>
+  <script src="{{static './javascript/login.js'}}"></script>
+</body>
+
+</html>

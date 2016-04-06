@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=320.1,minimum-scale=1.0,maximum-scale=1.0">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <title>百度新闻</title>
+  <link rel="stylesheet" type="text/css" href="{{static './css/main.css'}}">
+</head>
+
+<body style="overflow-y: scroll">
+  <div id="wrapper">
+    <div id="index_view">
+      <header>
+        <div class="ui-new-toolbar">
+          <div class="ui-new-toolbar-l">
+            <div class="ui-new-toolbar-btn btn-baidu bg-img"></div>
+            <div class="ui-new-toolbar-btn btn-userhome bg-img" id="username"></div>
+          </div>
+          <div class="ui-new-toolbar-r">
+            <div class="ui-new-toolbar-btn" id="system">
+              <a href="./login">登录</a></div>
+          </div>
+        </div>
+      </header>
+      <div id="index_view_content">
+        {{> navigator}}
+        <div id="index_view_sections">
+          <div class="index-view-subpage">
+            {{> gallery}} {{> ui-hotword}}
+            <div class="index-view-subpage-feed">
+              <div class="index-list">
+                {{> content-list}}
+              </div>
+              <div class="ui-refresh-wrapper">
+                <div class="ui-refresh">
+                  <div></div><span>点击加载更多</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="index_view_footer">
+        <div class="ui-footer">
+          <div class="item-wrapper">
+            <div class="item feedback">意见反馈</div>
+          </div>
+          <div class="item-wrapper">
+            <div class="item app-recommend">应用推荐</div>
+          </div>
+          <div class="item-wrapper">
+            <div class="item app-download">客户端</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{{static './javascript/home.js'}}"></script>
+</body>
+
+</html>

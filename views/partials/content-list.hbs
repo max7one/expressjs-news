@@ -1,0 +1,14 @@
+{{#each newsall}}
+<div class="index-list-item" data-newsid="{{{newsid}}}">
+  <div class="index-list-image">
+    <img src="{{{newsimg}}}">
+  </div>
+  <div class="index-list-main-text">
+    <div class="index-list-main-title">{{{newstitle}}}</div>
+    <div class="index-list-main-abs">{{{newscontent}}}</div>
+  </div>
+  <div class="index-list-bottom">
+    <b class="tip-reason tip-fillred">{{{source}}}</b>
+    <b class="tip-time">{{{addtime}}}</b></div>
+</div>
+{{/each}}
